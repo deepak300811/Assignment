@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-box {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-control {
+  margin: 0.5rem;
+}
+input {
+  padding: 0.5rem 1rem;
+}
+input:focus {
+  outline: none;
+}
+button {
+  padding: 0.6rem;
+}
+.outer {
+  background: rgb(245, 245, 245);
+  border-radius: 10px;
+  padding: 1rem;
+  /* padding: 0.5rem; */
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0rem 0.5rem 0.5rem;
+}
+.outer > .flag {
+  width: fit-content;
+}
+.outer > .flag img {
+  max-height: 200px;
+}
+.outer > .details {
+  display: flex;
+  padding: 0.5rem 0.5rem 0rem 0.5rem;
+  flex-direction: column;
+  /* align-items: center; */
+}
+.outer > .cap-weather {
+  width: fit-content;
+  align-self: flex-end;
+  background: rgb(64, 197, 64);
+  color: #000;
+  border: none;
+  cursor: pointer;
+}
+.outer > .cap-weather {
+  outline: none;
+}
+/* .outer > .cap-weather:hover {
+  opacity: 0.8;
+} */
+.outer.weather {
+  flex-direction: row;
+  align-items: center;
+  background: rgb(233, 233, 233);
+  padding: 0.5rem 1rem;
+}
+.weather-icon {
+  margin-right: 0.5rem;
+}
+.weather-icon img {
+  justify-self: center;
+  align-self: center;
+  max-height: 50px;
+}
+.go-back {
+  margin-left: 0.5rem;
+  /* margin: 1rem; */
+  align-self: center;
+  width: fit-content;
+  /* align-self: flex-end; */
+  background: rgb(197, 80, 64);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  /* width: 100%; */
+}
+.cap-weather:disabled {
+  background: rgb(149, 177, 149);
+  color: #fff;
+}
+.cap-weather:disabled {
+  background: rgb(149, 177, 149);
+  color: #fff;
+}
